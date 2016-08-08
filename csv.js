@@ -87,7 +87,7 @@ exports.csvDataObject = function(data){
         obj[prop[i]] = null;
     }
 
-    var keys = Object.keys(obj).sort();
+    var keys = Object.keys(obj);
     for(let i = 1 ; i < theData.length ; i++){
         let newObj = Object.create(obj);
         let col = theData[i];
