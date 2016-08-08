@@ -61,7 +61,7 @@ exports.readCsvSync = function(dir, output){
  */
 exports.csvDataArray = function(data){
     var newData = data.toString();
-    var row = newData.split('\n');
+    var row = newData.split('\r\n');
     var col = [];
 
     row.forEach(function(arr){
